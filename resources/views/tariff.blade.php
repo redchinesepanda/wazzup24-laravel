@@ -13,7 +13,7 @@
 	</div>
 	<div class="section-tariff-content" style="min-height: 536px;">
 		@foreach ($section->getCategories() as $categoryKey => $category)
-			<div class="tab-content{{ ($categoryKey == 2 ? ' active' : '') }}" style="display: block;"  data-id="{{ $loop->index }}">
+			<div class="tab-content{{ ($categoryKey == 2 ? ' active' : '') }}" style="display: block;;"  data-id="{{ $loop->index }}">
 				@foreach ($category->getPrices() as $priceKey => $price)
 					@include('tariff-price', ['price' => $price, 'items' => $section->getItem($loop->index), 'priceBefore' => ($categoryKey != 0 ? $section->getCategory(0)->getPrice($price->getName()) : null), 'popular' => ($priceKey == 1 ? true : false)])
 				@endforeach
