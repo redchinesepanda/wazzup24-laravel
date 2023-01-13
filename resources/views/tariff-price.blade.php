@@ -1,5 +1,5 @@
 <!-- View stored in resources/views/tariff-item.blade.php -->
-<div class="tariff-item" style="flex: 1 1 0px;">
+<div class="tariff-item" style="width: 33.333%">
 	@if($popular)
 		<div class="tariff-item-popular">{{ __('tariff-price.popular') }}</div>
 	@endif
