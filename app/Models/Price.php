@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 class Price {
 	public function __construct(string $name, array $price) {
