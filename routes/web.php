@@ -22,5 +22,3 @@ Route::get('ajax', 'AjaxController@show');
 
 use App\Http\Controllers\PageController;
 Route::get('{page_name}', 'PageController@show');
-
-?>
