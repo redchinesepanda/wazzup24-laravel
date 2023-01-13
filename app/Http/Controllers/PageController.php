@@ -93,11 +93,11 @@ class PageController extends Controller
 		$this->pushMessage('App::getLocale(): ' . App::getLocale());
 		$crm = $this->wzDetectCRM($pageName);
 		array_push($crm, $locale['tag']);
-		if (Cache::has($pageName)) {
-			$page = Cache::get($pageName);
+		if (Cache::store('redis')->has($pageName)) {
+			$page = Cache::store('redis')->get($pageName);
 		} else {
 			$page = new Page($pageName, $crm);
-			Cache::put($pageName, $page, now()->addMinutes(10));
+			Cache::store('redis')->put($pageName, $page, now()->addMinutes(10));
 		}
 		$this->pushMessage($page->getLog());
 		return view($page->getTemplate()[0], [
