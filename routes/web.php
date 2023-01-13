@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AjaxController;
-use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ajax', 'AjaxController@show');
+use App\Http\Controllers\AjaxController;
+Route::get('ajax', 'AjaxController@show');
 
-Route::get('/{page_name}', 'PageController@show');
+use App\Http\Controllers\PageController;
+Route::get('{page_name}', 'PageController@show');
 
 ?>
