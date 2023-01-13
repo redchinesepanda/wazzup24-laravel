@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Page;
+use Illuminate\Support\Facades\App;
 
 class PageController extends Controller
 {
