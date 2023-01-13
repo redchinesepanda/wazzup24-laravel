@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\Controller;
-use App;
+use App\Models\Page;
 
 class PageController extends Controller
 {
@@ -92,7 +91,7 @@ class PageController extends Controller
 		$this->pushMessage('App::getLocale(): ' . App::getLocale());
 		$crm = $this->wzDetectCRM($pageName);
 		array_push($crm, $locale['tag']);
-		$page = new App\Page($pageName, $crm);
+		$page = new Page($pageName, $crm);
 		$this->pushMessage($page->getLog());
 		return view($page->getTemplate()[0], [
 			'page' => $page,
