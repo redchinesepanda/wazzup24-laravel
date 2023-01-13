@@ -1,0 +1,22 @@
+/* Секция Офромление */
+.section-tariff {
+	padding: 48px 20px 40px 20px;
+}
+/* Таб Офромление */
+.tab-content {
+	flex-direction: column;
+}
+/* Заголовок Типографика */
+.section-tariff-title {
+	font-size: 24px;
+	line-height: 34px;
+}
+/* Навигация Типографика */
+.section-tariff-navigation .tab {
+	font-size: 14px;
+	line-height: 17px;
+}
+/* Таб Офромление */
+.tab-content {
+	gap: 16px;
+}

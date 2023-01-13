@@ -1,0 +1,20 @@
+/* Секция Оформление */
+.section-tariff {
+	width: 1200px;
+	margin: 0px auto;
+	padding: 88px 0px;
+}
+/* Заголовок Типографика */
+.section-tariff-title {
+	font-size: 36px;
+	line-height: 50px;
+}
+/* Навигация Типографика */
+.section-tariff-navigation .tab {
+	font-size: 16px;
+	line-height: 20px;
+}
+/* Таб Офромление */
+.tab-content {
+	gap: 24px;
+}

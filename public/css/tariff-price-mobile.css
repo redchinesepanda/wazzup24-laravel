@@ -1,0 +1,42 @@
+/* Прайс Офромление */
+.tariff-item {
+	padding: 20px;
+}
+/* Прайс Заголовок Офромление */
+.tariff-item-title  {
+	margin-bottom: 8px;
+}
+/* Прайс Заголовок Типографика */
+.tariff-item-title  {
+	font-size: 22px;
+	line-height: 31px;
+}
+/* Прайс Цена Типографика */
+.tariff-item-price  {
+	font-size: 36px;
+	line-height: 43px;
+}
+/* Прайс Валюта Типографика */
+.tariff-item-price .currency  {
+	font-size: 18px;
+	line-height: 25px;
+}
+/* Прайс Цена Комментарий Оформление */
+.tariff-item-price-comment  {
+	margin-bottom: 20px;
+}
+/* Прайс Цена Комментарий Типографика */
+.tariff-item-price-comment  {
+	font-size: 16px;
+	line-height: 26px;
+}
+/* Прайс Пункты Оформление */
+.tariff-item-checklist {
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+/* Прайс Пункты Типографика */
+.tariff-item-checklist  {
+	font-size: 16px;
+	line-height: 26px;
+}

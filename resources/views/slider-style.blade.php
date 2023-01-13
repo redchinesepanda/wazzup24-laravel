@@ -1,0 +1,77 @@
+@push('style-slider')
+	<style type="text/css">
+		/* Колонка Оформление */
+		.column-data {
+			margin: 0px auto;
+			padding-bottom: 32px;
+			/* position: relative; */
+		}
+		/* Заголовок Оформление */
+		.slider-title {
+			margin-top: 0px;
+		}
+		/* Заголовок Типографика */
+		.slider-title {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			color: #212121;
+		}
+		/* Описание Типографика */
+		.slider-description {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-feature-settings: 'pnum' on, 'lnum' on;
+			color: #4E4E4E;
+		}
+		/* Кнопка Оформление */
+		.slider-button {
+			display: block;
+			background-color: #4CAF50;
+			box-shadow: 0px 13px 20px rgba(118, 196, 125, 0.3);
+			border-radius: 4px;
+			padding: 15px 24px;
+			width: fit-content;
+		}
+		/* Кнопка Типографика */
+		.slider-button {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 26px;
+			font-feature-settings: 'pnum' on, 'lnum' on;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		/* Бабл Оформление */
+		.slider-bubble {
+			background-image: url('/img/section/slider/wz-slider-bubble-default.svg');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.slider-bubble {
+			width: 225px;
+			height: 95px;
+			/* position: absolute; */
+			position: relative;
+		}
+		.slider-bubble-text {
+			transform: rotate(-16deg);
+			position: absolute;
+			left: 70px;
+			top: 44px;
+		}
+		/* Бабл Типографика */
+		.slider-bubble-text {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 25px;
+			color: #212121;
+		}
+	</style>
+@endpush

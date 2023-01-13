@@ -1,0 +1,7 @@
+/* Прайс Подсказка Оформление */
+.tariff-item-price-tooltip:not(.item) {
+	top: 141px;
+}
+.tariff-item-price-tooltip.item {
+	top: 283px;
+}

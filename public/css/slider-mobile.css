@@ -1,0 +1,37 @@
+/* Колонка Оформление */
+.column-data {
+	padding-top: 24px;
+}
+.column-data .wz-desktop {
+	display: none;
+}
+/* Заголовок Оформление */
+.slider-title {
+	margin-bottom: 16px;
+}
+/* Заголовок Типографика */
+.slider-title {
+	font-size: 28px;
+	line-height: 39px;
+	text-align: center;
+}
+/* Описание Оформление */
+.slider-description {
+	margin-bottom: 24px;
+}
+/* Описание Типографика */
+.slider-description {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+/* Кнопка Оформление */
+.slider-button {
+	margin: 0px auto;
+}
+/* Бабл Оформление */
+.slider-bubble {
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}

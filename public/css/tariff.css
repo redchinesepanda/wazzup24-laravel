@@ -1,0 +1,67 @@
+/* Секция Офромление */
+.section-tariff.wz-rur .tariff-item-price > span:not(.wz-rur),
+.section-tariff.wz-rur .tariff-item-price-before span:not(.wz-rur),
+.section-tariff.wz-usd .tariff-item-price > span:not(.wz-usd),
+.section-tariff.wz-usd .tariff-item-price-before span:not(.wz-usd),
+.section-tariff.wz-eur .tariff-item-price > span:not(.wz-eur),
+.section-tariff.wz-eur .tariff-item-price-before span:not(.wz-eur),
+.section-tariff.wz-kzt .tariff-item-price > span:not(.wz-kzt),
+.section-tariff.wz-kzt .tariff-item-price-before span:not(.wz-kzt) {
+	display: none;
+}
+/* Заголовок Оформление */
+.section-tariff-title {
+	margin-top: 0px;
+	margin-bottom: 56px;
+}
+/* Заголовок Типографика */
+.section-tariff-title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	color: #212121;
+	text-align: center;
+}
+/* Навигация Оформление */
+.section-tariff-navigation {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.section-tariff-navigation .tab.active {
+	border-bottom-color: #4CAF50;
+}
+.section-tariff-navigation .tab {
+	width: fit-content;
+	padding-bottom: 8px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	cursor: pointer;
+}
+/* Навигация Типографика */
+.section-tariff-navigation .tab.active {
+	color: #4CAF50;
+}
+.section-tariff-navigation .tab {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* Тариф Офромление */
+.section-tariff-content {
+	padding-top: 48px;
+}
+/* Таб Офромление */
+.tab-content {
+	display: flex;
+	justify-content: center;
+}
+.tab-content:not(.active) {
+	display: none;
+}
