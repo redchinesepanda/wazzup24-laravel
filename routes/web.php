@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 use App\Http\Controllers\AjaxController;
-Route::get('ajax', [AjaxController::class, 'show']);
+Route::get('/ajax', [AjaxController::class, 'show']);
 
 use App\Http\Controllers\PageController;
-Route::get('{page_name}', [PageController::class, 'show']);
+Route::get('/{page_name}', [PageController::class, 'show']);
