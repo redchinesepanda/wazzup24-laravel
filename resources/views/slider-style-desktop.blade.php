@@ -5,12 +5,12 @@
 			width: 1200px;
 			padding-top: 56px;
 		}
-		.column-data {
+		/*.column-data {
 			background-image: url('/img/section/slider/wz-slider-background-default.svg');
 			background-position: top 40px right;
 			background-repeat: no-repeat;
 			background-size: auto;
-		}
+		}*/
 		/* Заголовок Оформление */
 		.slider-title {
 			width: 588px;
