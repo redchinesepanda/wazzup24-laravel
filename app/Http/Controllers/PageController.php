@@ -105,7 +105,7 @@ class PageController extends Controller
 			'messages' => $this->getLog()
 		]);
     }
-	protected $debug = true;
+	protected $debug = false;
 	private function getDebug(): bool {
 		return $this->debug;
 	}
