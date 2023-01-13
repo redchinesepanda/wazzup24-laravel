@@ -1,7 +1,7 @@
 <!-- View stored in resources/views/tariff.blade.php -->
 <div class="section-tariff wz-rur">
 	<h2 class="section-tariff-title" style="text-align: center;">{{ $section->getName() }}</h2>
-	<div class="section-tariff-navigation" style="display: flex; justify-content: center; gap: 24px;">
+	<div class="section-tariff-navigation" style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
 		@foreach ($section->getCategories() as $categoryKey => $category)
 			<div class="tab {{($categoryKey == 2 ? 'active' : '')}}" id="{{ $loop->index }}">
 				{{ $category->getName() }}
