@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Page;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cache;
 
 class PageController extends Controller
 {
@@ -92,7 +93,12 @@ class PageController extends Controller
 		$this->pushMessage('App::getLocale(): ' . App::getLocale());
 		$crm = $this->wzDetectCRM($pageName);
 		array_push($crm, $locale['tag']);
-		$page = new Page($pageName, $crm);
+		if (Cache::has($pageName)) {
+			$page = Cache::get($pageName);
+		} else {
+			$page = new Page($pageName, $crm);
+			Cache::put($pageName, $page, now()->addMinutes(10));
+		}
 		$this->pushMessage($page->getLog());
 		return view($page->getTemplate()[0], [
 			'page' => $page,
