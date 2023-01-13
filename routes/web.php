@@ -19,5 +19,7 @@ Route::get('/', function () {
 
 Route::get('ajax', 'AjaxController@show');
 
+Route::get('whatsapp-crm', 'PageController@show');
 Route::get('{page_name}', 'PageController@show');
 
+?>
