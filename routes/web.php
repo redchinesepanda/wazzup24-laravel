@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ajax', 'AjaxController@show');
+Route::get('/ajax', 'AjaxController@show');
 
-Route::get('{page_name}', 'PageController@show');
+Route::get('/{page_name}', 'PageController@show');
 
 ?>
