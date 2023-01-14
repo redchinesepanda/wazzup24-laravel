@@ -11,6 +11,7 @@
 		@include('script')
 	</body>
     <body class="{{ $page->echoTags() }}">
+		<example-component></example-component>
 		<div class="debug">{!! $messages !!}</div>
 		@for($i = 0; $i < 6; $i++)
 			@foreach ($page->getSections() as $section)
