@@ -37,8 +37,3 @@ app.component('example-component', ExampleComponent);
  */
 
 app.mount('#app');
-
-Vue.component(
-    'example-component',
-    require('./components/ExampleComponent.vue').default
-);
