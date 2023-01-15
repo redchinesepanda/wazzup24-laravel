@@ -37,12 +37,9 @@ app.component('example-component', ExampleComponent);
  */
 
 app.mount('#app');
-<<<<<<< HEAD
 
 Vue.component(
     'example-component',
     require('./components/ExampleComponent.vue').default
 );
 
-=======
->>>>>>> 703623a2de64dd61506bd54ee0e9053e8b5b4ba3
